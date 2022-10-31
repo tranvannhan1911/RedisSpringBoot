@@ -2,8 +2,6 @@ package ktpm.redis_spring_boot.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,8 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import ktpm.redis_spring_boot.entity.Product;
 import ktpm.redis_spring_boot.service.ProductService;
 
-
-//@Component
 @RestController
 public class Controller {
 	@Autowired
